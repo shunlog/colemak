@@ -1,0 +1,78 @@
+! xmodmap for the Colemak Mod-DH layout (US, ANSI keyboard, Z angle mod).
+! http://colemakmods.github.io/mod-dh/.
+! Public domain.
+
+keycode  49  =  grave           asciitilde             dead_tilde           asciitilde
+keycode  10  =  1               exclam                 exclamdown           onesuperior
+keycode  11  =  2               at                     masculine            twosuperior
+keycode  12  =  3               numbersign             ordfeminine          threesuperior
+keycode  13  =  4               dollar                 cent                 sterling
+keycode  14  =  5               percent                EuroSign             yen
+keycode  15  =  6               asciicircum            hstroke              Hstroke
+keycode  16  =  7               ampersand              eth                  ETH
+keycode  17  =  8               asterisk               thorn                THORN
+keycode  18  =  9               parenleft              leftsinglequotemark  leftdoublequotemark
+keycode  19  =  0               parenright             rightsinglequotemark rightdoublequotemark
+keycode  20  =  minus           underscore             endash               emdash
+keycode  21  =  equal           plus                   multiply             division
+keycode  22  =  Caps_Lock       Caps_Lock              Caps_Lock            Caps_Lock
+
+keycode  24  =  Cyrillic_softsign Cyrillic_SOFTSIGN    Cyrillic_hardsign    Cyrillic_HARDSIGN
+keycode  25  =  Cyrillic_sha    Cyrillic_SHA           Cyrillic_shcha       Cyrillic_SHCHA
+keycode  26  =  Cyrillic_ef     Cyrillic_EF            atilde               Atilde
+keycode  27  =  Cyrillic_pe     Cyrillic_PE            oslash               Ooblique
+keycode  28  =  Cyrillic_be     Cyrillic_BE            ediaeresis           Ediaeresis
+keycode  29  =  Cyrillic_zhe    Cyrillic_ZHE           Page_Up              Dstroke
+keycode  30  =  Cyrillic_el     Cyrillic_EL            Home
+keycode  31  =  Cyrillic_u      Cyrillic_U             Up                   Page_Up
+keycode  32  =  Cyrillic_shorti Cyrillic_SHORTI        End
+keycode  33  =  semicolon       colon                  odiaeresis           Odiaeresis
+keycode  34  =  bracketleft     braceleft              guillemotleft        U2039
+keycode  35  =  bracketright    braceright             guillemotright       U203a
+keycode  51  =  backslash       bar                    asciitilde           asciitilde
+
+keycode  38  =  Cyrillic_a      Cyrillic_A             Cyrillic_e           Cyrillic_E
+keycode  39  =  Cyrillic_er     Cyrillic_ER            Cyrillic_yeru        Cyrillic_YERU
+keycode  40  =  Cyrillic_es     Cyrillic_ES            Cyrillic_i_macron    Cyrillic_I_macron
+keycode  41  =  Cyrillic_te     Cyrillic_TE            Cyrillic_tse         Cyrillic_TSE
+keycode  42  =  Cyrillic_ghe    Cyrillic_GHE           dead_ogonek          asciitilde
+keycode  43  =  Cyrillic_ka     Cyrillic_KA            Page_Down            asciitilde
+keycode  44  =  Cyrillic_en     Cyrillic_EN            Left
+keycode  45  =  Cyrillic_ie     Cyrillic_IE            Down                 Page_Down
+keycode  46  =  Cyrillic_i      Cyrillic_I             Right
+keycode  47  =  Cyrillic_o      Cyrillic_O             oacute               Oacute
+keycode  48  =  apostrophe      quotedbl               otilde               Otilde
+
+keycode  94  =  minus           underscore              endash              emdash
+keycode  52  =  Cyrillic_ya     Cyrillic_YA             Cyrillic_yu         Cyrillic_YU
+keycode  53  =  Cyrillic_che    Cyrillic_CHE            ccedilla            Ccedilla
+keycode  54  =  Cyrillic_de     Cyrillic_DE             dead_diaeresis      asciitilde
+keycode  55  =  Cyrillic_ve     Cyrillic_VE             oe                  OE
+keycode  56  =  Cyrillic_ze     Cyrillic_ZE             ae                  AE
+keycode  57  =  Cyrillic_em     Cyrillic_EM             dead_macron         asciitilde
+keycode  58  =  Cyrillic_ha     Cyrillic_HA             dead_caron          asciitilde
+keycode  59  =  comma           less                    dead_cedilla        asciitilde
+keycode  60  =  period          greater                 dead_abovedot       asciitilde
+keycode  61  =  slash           question                questiondown        asciitilde
+
+keycode  65  =  space           space                   space               nobreakspace
+
+keycode  108 = Mode_switch Mode_switch
+
+clear Mod1
+clear Mod4
+keycode  64 = Super_L NoSymbol Super_L
+keycode 133 = Alt_L Meta_L Alt_L Meta_L
+add Mod1    = Alt_L Alt_R
+add Mod4    = Super_L Super_R
+! remove Mod4 = Super_L
+! remove Mod1 = Alt_L
+! keysym Alt_L = Super_L
+! keysym Super_L = Alt_L
+! add Mod1 = Alt_L
+! add Mod4 = Super_L
+
+
+! Remove these 2 lines if you want caps lock unmodified
+keycode 66 =  BackSpace BackSpace BackSpace BackSpace
+clear Lock

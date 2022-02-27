@@ -32,7 +32,7 @@ keycode  35  =  bracketright  braceright   guillemotright        U203a
 keycode  51  =  backslash     bar          asciitilde            asciitilde
 
 keycode  38  =  a             A            U00103                U00102
-keycode  39  =  r             R            U0020B                U0020A
+keycode  39  =  r             R            U000EE                U000CE
 keycode  40  =  s             S            U00219                U00218  
 keycode  41  =  t             T            U0021B                U0021A
 keycode  42  =  g             G            dead_ogonek           asciitilde
